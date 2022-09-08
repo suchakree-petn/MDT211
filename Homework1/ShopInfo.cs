@@ -3,7 +3,7 @@ public class ShopInfo
     private string ShopName;
     private string TaxNumber;
     private string OwnerName;
-    private string CompanyValue;
+    private double CompanyValue;
     public void UserInput()
     {
         Console.Write("Please input Name: ");
@@ -13,7 +13,7 @@ public class ShopInfo
         Console.Write("Please input Owner Name: ");
         this.OwnerName = Console.ReadLine();
         Console.Write("Please input Registered Value: ");
-        this.CompanyValue = Console.ReadLine();
+        this.CompanyValue = double.Parse(Console.ReadLine());
     }
     public void PrintShopDetail()
     {
